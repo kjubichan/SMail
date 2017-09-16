@@ -4,16 +4,16 @@
       = form_tag(send_email_path, method: "post", :class=>"form-horizontal") do
         %fieldset
           %legend.text-center Write to someone
-          / Name input
-          .form-group
-            %label.col-md-3.control-label{:for => "name"} Name
-            .col-md-9
-              %input#name.form-control{:name => "name", :placeholder => "Your name", :type => "text"}/
           / Email input
           .form-group
             %label.col-md-3.control-label{:for => "email"} E-mail
             .col-md-9
               %input#email.form-control{:name => "email", :placeholder => "Your email", :type => "text"}/
+          / Subject input
+          .form-group
+            %label.col-md-3.control-label{:for => "subject"} Subject
+            .col-md-9
+              %input#subject.form-control{:name => "subject", :placeholder => "What is the subject?", :type => "text"}/
           / Message body
           .form-group
             %label.col-md-3.control-label{:for => "message"} Your message

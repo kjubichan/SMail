@@ -1,0 +1,10 @@
+development:
+  smtp_login: 
+  smtp_password: 
+
+test:
+  adapter: async
+
+production:
+  smtp_login: 
+  smtp_password: 
